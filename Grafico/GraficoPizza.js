@@ -3,6 +3,12 @@ import { pegarCss } from "./comum.js";
 async function criarGraficoPizza() {
     const url = 'https://raw.githubusercontent.com/leoda17/Base_Json/refs/heads/main/GraficoPizza.json'; // URL do JSON
     const res = await fetch(url);
+
+    if (!res.ok) {
+        console.error('Erro ao buscar os dados:', res.statusText);
+        return;
+    }
+
     const dados = await res.json();
     
     // Extrai os esportes e suas porcentagens
@@ -16,9 +22,11 @@ async function criarGraficoPizza() {
             type: 'pie',
             marker: {
                 colors: [
-                    pegarCss(''), 
-                    pegarCss(''), 
-                    pegarCss('')
+                    '#FF5733', // Cor 1 (laranja)
+                    '#33FF57', // Cor 2 (verde)
+                    '#3357FF', // Cor 3 (azul)
+                    '#F0E68C', // Cor 4 (amarelo claro)
+                    '#FF33A1'  // Cor 5 (rosa)
                 ] // Cores dos setores
             }
         }
