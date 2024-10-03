@@ -6,30 +6,31 @@
 }
 
 :root {
-    --amarelo: #f9e64d; /* Amarelo */
-    --marrom-claro: #d1b06e; /* Marrom claro */
-    --marrom: #a58f5b; /* Tom mais escuro de marrom */
-    --preto: #000000;
+    --verde-escuro: #1b3a24; /* Verde escuro */
+    --verde-claro: #66bb6a; /* Verde claro */
+    --branco: #ffffff; /* Branco */
+    --preto: #000000; /* Preto */
+    --verde-médio: #4caf50; /* Verde médio */
     --fonte-titulo: "M PLUS Rounded 1c", sans-serif;
     --fonte-texto: "Cinzel", serif;
 }
 
 body {
-    background-color: var(--amarelo);
+    background-color: var(--verde-claro);
     font-family: var(--fonte-texto);
-    color: var(--preto);
+    color: var(--branco);
     height: 100vh;
 }
 
 header {
-    background-color: var(--marrom-claro);
+    background-color: var(--verde-escuro);
     text-align: center;
 }
 
 h1 {
     font-family: var(--fonte-titulo);
     font-size: 3rem;
-    color: var(--marrom);
+    color: var(--branco);
 }
 
 nav {
@@ -40,14 +41,14 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: var(--preto);
+    color: var(--branco);
     font-size: 2rem;
     margin: 0 2rem 1rem 0;
 }
 
 nav a:hover {
     text-transform: underline;
-    color: var(--marrom);
+    color: var(--verde-médio);
     transform: scale(0.9);
     transition: transform 0.3s;
 }
@@ -55,7 +56,7 @@ nav a:hover {
 .caixa-grafico {
     margin: 5rem;
     font-size: 1.5rem;
-    background-color: var(--marrom-claro);
+    background-color: var(--verde-médio);
     padding: 2rem;
     border-radius: 15px;
     border: var(--preto) double 5px;
@@ -76,8 +77,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--marrom-claro);
-    color: var(--marrom);
+    background-color: var(--verde-escuro);
+    color: var(--branco);
     width: 100%;
     height: 3rem;
     margin-top: 2rem;
