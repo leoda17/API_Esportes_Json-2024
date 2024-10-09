@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -6,31 +6,33 @@
 }
 
 :root {
-    --verde-escuro: #1b3a24; /* Verde escuro */
-    --verde-claro: #66bb6a; /* Verde claro */
-    --branco: #ffffff; /* Branco */
+    --verde-claro: #d4edda; /* Verde claro */
+    --verde-médio: #c3e6cb; /* Verde médio */
+    --verde-escuro: #155724; /* Verde escuro */
+    --amarelo-claro: #fff3cd; /* Amarelo claro */
+    --amarelo-escuro: #856404; /* Amarelo escuro */
     --preto: #000000; /* Preto */
-    --verde-médio: #4caf50; /* Verde médio */
-    --fonte-titulo: "M PLUS Rounded 1c", sans-serif;
-    --fonte-texto: "Cinzel", serif;
+    --fonte-titulo: 'Lobster', cursive;
+    --fonte-texto: 'Roboto', sans-serif;
 }
 
 body {
     background-color: var(--verde-claro);
     font-family: var(--fonte-texto);
-    color: var(--branco);
+    color: var(--preto);
     height: 100vh;
 }
 
 header {
-    background-color: var(--verde-escuro);
+    background-color: var(--verde-claro);
     text-align: center;
 }
 
 h1 {
     font-family: var(--fonte-titulo);
     font-size: 3rem;
-    color: var(--branco);
+    color: var(--verde-escuro);
+    padding: 1.5rem 0;
 }
 
 nav {
@@ -41,25 +43,32 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: var(--branco);
+    color: var(--preto);
     font-size: 2rem;
     margin: 0 2rem 1rem 0;
 }
 
 nav a:hover {
-    text-transform: underline;
-    color: var(--verde-médio);
+    text-decoration: underline;
+    color: var(--amarelo-escuro);
     transform: scale(0.9);
     transition: transform 0.3s;
 }
 
 .caixa-grafico {
     margin: 5rem;
-    font-size: 1.5rem;
     background-color: var(--verde-médio);
     padding: 2rem;
     border-radius: 15px;
-    border: var(--preto) double 5px;
+    border: var(--preto) double 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caixa-grafico__titulo {
+    padding-top: 2rem;
+    font-size: 2.5rem;
 }
 
 .caixa-grafico__texto {
@@ -70,15 +79,15 @@ nav a:hover {
 span {
     font-family: var(--fonte-titulo);
     color: var(--preto);
-    font-size: 40px;
+    font-size: 30px;
 }
 
 footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--verde-escuro);
-    color: var(--branco);
+    background-color: var(--verde-claro);
+    color: var(--verde-escuro);
     width: 100%;
     height: 3rem;
     margin-top: 2rem;
