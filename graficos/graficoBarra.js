@@ -26,7 +26,7 @@ async function criarGraficoBarra() {
             font: {
                 color: pegarCSS('--branco'),
                 family: pegarCSS('--fonte-titulo'),
-                size: 50
+                size: 30
             }
         },
         xaxis: {

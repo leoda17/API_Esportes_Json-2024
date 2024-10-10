@@ -9,9 +9,9 @@ async function graficosEsportes() {
     const esportesVotados = dados.slice(1).map(item => item[2]);
 
     const contagemEsportes = esportesVotados.reduce((acc, esporte) => {
-        // Tratando o caso de múltiplos esportes em uma única entrada
+  
         esporte.split(',').forEach(esporteIndividual => {
-            esporteIndividual = esporteIndividual.trim(); // Removendo espaços em branco
+            esporteIndividual = esporteIndividual.trim(); 
             acc[esporteIndividual] = (acc[esporteIndividual] || 0) + 1;
         });
         return acc;
@@ -36,7 +36,7 @@ async function graficosEsportes() {
 
     const pesquisaTitulo = document.createElement('h3');
     pesquisaTitulo.classList.add('caixa-grafico__titulo');
-    pesquisaTitulo.innerHTML = `Os esportes mais praticados na escola <span>Tancredo</span>`;
+    pesquisaTitulo.innerHTML = `<span> Os esportes mais praticados na escola <span>Tancredo</span>`;
 
     const grafico = document.createElement('div');
     grafico.className = 'grafico-disco';

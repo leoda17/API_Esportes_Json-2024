@@ -25,7 +25,7 @@ async function criaGraficoPizza() {
 
     const indiesTitulo = document.createElement('h3');
     indiesTitulo.classList.add('caixa-grafico__titulo');
-    indiesTitulo.innerHTML = `Os <span>esportes mais praticados</span> em 2023`;
+    indiesTitulo.innerHTML = `<span> Os esportes mais praticados em 2023 </span> `;
 
     const grafico = document.createElement('div');
     grafico.className = 'grafico-disco';
